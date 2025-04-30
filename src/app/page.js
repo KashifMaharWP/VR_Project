@@ -4,7 +4,7 @@ export default function Home() {
   return (
    <>
    <div>
-    Project is deployed
+    Project is deployed Finally
    </div>
    </>
   );

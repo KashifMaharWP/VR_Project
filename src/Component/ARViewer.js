@@ -183,7 +183,7 @@ export default function ARViewer({ modelUrl }) {
         }
       }
     };
-  }, [modelUrl]);
+  }, [modelUrl,isModelPlaced]);
 
   // UI feedback
   if (error) {

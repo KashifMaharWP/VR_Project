@@ -19,6 +19,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+
+      <head><script src="https://cdn.jsdelivr.net/npm/mind-ar@1.1.3/dist/mindar-image-three.prod.js"></script></head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

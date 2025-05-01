@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image';
 import Link from 'next/link';
 
 const products = [
@@ -25,7 +26,11 @@ export default function Home() {
       <div className="products-grid">
         {products.map(product => (
           <div key={product.id} className="product-item">
-            <img src={product.image} alt={product.name} />
+            <Image
+            src={product.image}
+            alt={product.name}
+            />
+           
             <h2>{product.name}</h2>
             <p>${product.price.toFixed(2)}</p>
             <Link href={`/product/${product.id}`} className="view-button">

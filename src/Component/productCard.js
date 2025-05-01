@@ -1,8 +1,14 @@
+import Image from 'next/image';
 export default function ProductCard({ product, onViewAR }) {
     return (
       <div className="product-card">
         <div className="product-image">
-          <img src={product.image} alt={product.name} />
+          <Image 
+          src={product.image}
+          alt={product.name}
+
+          />
+         
         </div>
         <div className="product-details">
           <h1>{product.name}</h1>
